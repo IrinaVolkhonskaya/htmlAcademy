@@ -1,4 +1,95 @@
-* {
-    margin: 0;
+body {
+    margin: auto;
     padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Arial", sans-serif;
+    color: #404040;
+    background-color: white;
+    width: 1200px;
+    }
+   
+.header-logo {
+     background-color: saddlebrown;
+     color: white;
+     min-height: 600px;
+}    
+
+.header-logo img{
+     padding: 70px 0 0 150px;
+}
+
+.main-nav {
+    list-style: none;
+}
+
+.main-nav li {
+    text-transform: uppercase;
+}
+
+.main-nav a {
+   color: #ffffff;
+   text-decoration: none;
+}
+
+.main-nav a:hover {
+   text-decoration: underline;
+}
+
+.main-nav a:active {
+   color: rgba(255, 255, 255, 0.3);
+}
+
+.promo {
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 70px;
+    font-family: "Arial", serif;
+    text-align: center;
+}
+
+.benefits ul {
+    list-style: none;
+}
+
+.benefits-item {
+    text-align: center;
+    border-left: 1px solid #d9d9d9;
+}
+
+.benefits-item:first-child {
+    border-left: none;
+}
+
+.benefits-item p {
+    font-size: 16px;
+}
+
+.benefits-title {
+    font-family: "Georgia", serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #a38b70;
+    text-transform: uppercase;
+}
+
+.history-section-title {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.history-title {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.history-source {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.history-source a {
+    color: #666666;
 }
