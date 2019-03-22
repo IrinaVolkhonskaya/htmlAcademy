@@ -6,13 +6,26 @@ body {
   font-family: "Arial", sans-serif;
   color: #404040;
   background-color: white;
-  width: 1200px;
+  min-width: 1200px;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto 0 auto;
+}
+/* вставить нужную картинку*/
+header {
+  background: url(img/header-bg.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 490px;
 }
 
 .header-logo {
   background-color: saddlebrown;
   color: white;
   min-height: 600px;
+  float: left;
+  width: auto;
 }
 
 .header-logo img {
@@ -22,6 +35,7 @@ body {
 
 .main-nav {
   width: 800px;
+  float: left;
   list-style: none;
   border-top: 1px solid #7b581e;
   border-bottom: 1px solid #7b581e;
@@ -55,17 +69,43 @@ body {
   font-family: "Arial", serif;
   font-size: 70px;
   line-height: 70px;
-  margin-top: 200px;
+  margin-top: 300px;
   text-align: center;
+}
+
+/*пиво романтик*/
+.one {
+}
+
+/*пиво вахтер*/
+.two {
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.benefits {
+  padding: 50px 0 55px 0;
+  background-color: #feca79;
+  height: 300px;
 }
 
 .benefits ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .benefits-item {
   text-align: center;
-  border-left: 1px solid #d9d9d9;
+  border-left: 1px solid #8d745a;
+  padding-top: 70px;
+  float: left;
+  width: 280px;
+  padding: 0 30px 0 50px;
 }
 
 .benefits-item:first-child {
@@ -74,20 +114,68 @@ body {
 
 .benefits-item p {
   font-size: 16px;
+  text-align: left;
 }
 
 .benefits-title {
-  font-family: "Georgia", serif;
-  font-size: 30px;
-  line-height: 30px;
+  font-family: "Arial", serif;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: bold;
-  color: #a38b70;
+  color: #000000;
   text-transform: uppercase;
+  text-align: left;
+}
+/*подставить нужные картинки*/
+.benefits-choice {
+  background: url(img/feature-1.png) no-repeat top center;
+}
+/*подставить нужные картинки*/
+.benefits-quality {
+  background: url(img/feature-2.png) no-repeat top center;
+}
+/*подставить нужные картинки*/
+.benefits-safety {
+  background: url(img/feature-3.png) no-repeat top center;
 }
 
 .section-title {
   font-size: 40px;
   text-transform: uppercase;
+  margin: 60px 180px 60px 0;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.history dl {
+  width: 520px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.history dt {
+  margin: 0;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  right: -570px;
+}
+
+.history dd {
+  margin: 0;
+  font-size: 16px;
+  position: relative;
+}
+
+.history dd img {
+position: absolute;
+top: 0;
+right: -250px;
+}
+
+.history dd p {
+  margin: 0;
 }
 
 .history-title {
@@ -105,11 +193,17 @@ body {
   color: #666666;
 }
 
+.assortment {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
 .price-list {
   width: 70%;
   border-collapse: collapse;
   line-height: 30px;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 .price-list th {
@@ -144,6 +238,12 @@ body {
   margin-left: 20px;
 }
 
+.order {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #feca79;
+}
+
 .order-tip {
   font-size: 16px;
 }
@@ -152,6 +252,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .form-group input[type="text"],
@@ -161,7 +262,13 @@ body {
 .form-group textarea {
   font: inherit;
   color: inherit;
-  border: 2px solid #d5d5d5;
+  border: 1px solid #e5b56d;
+  background-color: #e5b56d;
+  margin-top: 35px;
+  height: 55px;
+  width: 100%;
+  padding: 9px 15px;
+  box-sizing: border-box;
 }
 
 .form-group input[type="text"]:hover,
@@ -179,11 +286,44 @@ body {
 .form-group textarea:focus {
   border-color: #8d745a;
 }
+
+.form-group-left-part {
+  float: left;
+  width: 290px;
+  }
+
+.form-group-right-part {
+  float: right;
+  width: 290px;
+  }
+
+.form-group textarea {
+  display: block;
+  min-height: 120px;
+}
+
+.checkbox-area {
+  margin-bottom: 25px;
+  padding: 25px 0 25px 17px;
+  }
+
+.checkbox-area input[type="checkbox"] {
+  margin: 0;
+  margin-right: 5px;
+}
+
 footer {
-  margin-top: 20px;
-  padding: 10px;    
+  margin-top: 0px;
+  padding: 10px;
   background-color: #000000;
   color: #c3c3c3;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+footer .social {
+  float: left;
+  width: 490px;
 }
 
 .footer-menu ul {
@@ -194,19 +334,50 @@ footer {
   font-size: 16px;
   font-weight: bold;
   color: #c3c3c3;
-  text-decoration: none; 
+  text-decoration: none;
   text-transform: uppercase;
 }
 
 .footer-menu a:hover {
   color: #ffffff;
-  }
-  
+}
+
 .footer-menu a:active {
   color: rgba(255, 255, 255, 0.3);
-  }
+}
 
 .social,
 .social-btn {
-    color: #FECA79;
+  color: #feca79;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  color: #824604;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #824604;
+  padding: 10px;
+  text-align: center;
+  font: inherit;
+  width: 150px;
+}
+
+.btn-quick-order {
+  width: 100px;
+  background-color: #824603;
+  color: #FEFAFE;
+}
+
+.btn-quick-order:hover {
+  color: #824603;
+  border-color: white;
+  background-color: white;
   }
+
+.btn-order {
+  width: 200px;
+  background-color: #824603;
+  color: #FEFAFE;
+}
