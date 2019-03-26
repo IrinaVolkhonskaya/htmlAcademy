@@ -73,15 +73,18 @@
      <div class="container">
        <ul class="clearfix">
          <li class="benefits-item">
-           <h2 class="benefits-title benefits-choice">Варим сами</h2>
+             <div class="benefits-choice"></div>
+             <h2 class="benefits-title">Варим сами</h2>
              <p>Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
            </li>
          <li class="benefits-item">
-           <h2 class="benefits-title benefits-quality">Своё, родное</h2>
+             <div class="benefits-quality"></div>
+             <h2 class="benefits-title">Своё, родное</h2>
              <p>Не заработка ради, а импортозамещения для. Поднимаем производство.</p>
            </li>
          <li class="benefits-item">
-           <h2 class="benefits-title benefits-safety">Не экономим</h2>
+             <div class=" benefits-safety"></div>
+             <h2 class="benefits-title">Не экономим</h2>
              <p>Человек это то, что он ест и пьет. У нас только качественные ингредиенты.</p>
          </li>
          </ul>
@@ -91,8 +94,8 @@
    <div class="history">
      <div class="container">
        <h2 class="section-title">Немного истории</h2>
-        <h3 class="history-title">Происхождение кваса</h3>
-        <dl>
+        <dl> 
+         <h3 class="history-title">Происхождение кваса</h3>
           <dt><i class="history-source">Источник: <a target="_blank" href="https://ru.wikipedia.org">ru.wikipedia.org</a></i>
           </dt>
           <dd><img src="img/wiki-1.png">
@@ -118,7 +121,8 @@
             <blockquote>
                 <p>Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса. Да, да, вы не ослышались!
                   Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка!</p>
-                <cite>Газета столичный Стольник</cite><a class="btn" href="#"> Читать далее</a>
+                <cite>Газета столичный Стольник</cite>
+                <a class="btn to-full-info" href="#"> Читать далее</a>
                </blockquote>
          </div>
        </div>
@@ -132,35 +136,35 @@
               <th>Алк.</th>
               <th>Ккал</th>
               <th>Объём</th>
-              <th>Стоимость</th>
+              <th class="price">Стоимость</th>
              </tr>
             <tr>
               <td class="price-name">Классика</td>
               <td>&lt; 1,2%</td>
               <td>33</td>
               <td>330 мл</td>
-              <td>120 Р.</td>
+              <td class="price">120 Р.</td>
              </tr>
              <tr>
                <td class="price-name">Шабаш</td>
                <td>&gt; 1,2%</td>
                <td>45</td>
                <td>330 мл</td>
-               <td>250 Р.</td>
+               <td class="price">250 Р.</td>
                </tr>
              <tr>
                <td class="price-name">Вахтёр <sup>Новинка</sup></td>
                <td>&lt; 1%</td>
                <td>35</td>
                <td>0,5 л</td>
-               <td>150 Р.</td>
+               <td class="price">150 Р.</td>
                </tr>
                <tr>
                  <td class="price-name">Романтик <sup>Новинка</sup></td>
                  <td>&lt; 0,5%</td>
                  <td>27</td>
                  <td>0,5 л</td>
-                 <td>90 Р.</td>
+                 <td class="price">90 Р.</td>
                  </tr>
            </table>
        </div>
@@ -174,22 +178,22 @@
             <form class="order-form" method="post">
                <div class="form-group">
                  <label for="name">Представьтесь:</label>
-                 <input type="text" name="name" id="name">
+                 <input type="text" name="name" id="name" placeholder="КАК МЫ МОЖЕМ К ВАМ ОБРАЩАТЬСЯ?">
                  </div>
               
               <div class="clearfix">
                    <div class="form-group form-group-left-part">
                      <label for="phone">Номер телефона:</label>
-                     <input type="phone" name="phone" id="phone">
+                     <input type="phone" name="phone" id="phone" placeholder="+7(XXX) XXX-XX-XX">
                      </div>
                    <div class="form-group form-group-right-part">
                       <label for="phone additional">Доп. номер:</label>
-                      <input type="phone" name="phone additional" id="phone additional">
+                      <input type="phone" name="phone additional" id="phone additional" placeholder="+7(ХХХ) ХХХ-ХХ-ХХ">
                      </div>
                  </div>   
               <div class="form-group">
                  <label for="email">Email:</label>
-                 <input type="email" name="email" id="email">
+                 <input type="email" name="email" id="email" placeholder="ВАША ЭЛЕКТРОННАЯ ПОЧТА">
                  </div>
               <div class="form-group">
                  <label for="topic">Объем заказа:</label>
@@ -199,7 +203,7 @@
                   </div>
               <div class="form-group">
                  <label for="comments">Доп. комментарий:</label>
-                 <textarea rows="10" cols="96" type="text" name="comments" id="comments"></textarea>
+                 <textarea rows="10" cols="96" type="text" name="comments" id="comments" placeholder="СООБЩИТЕ НАМ ВСЁ, ЧТО СЧИТАЕТЕ НУЖНЫМ"></textarea>
                  </div>
               <div class="checkbox-area form-group">
                  <input type="checkbox" name="checkbox" type="checkbox">

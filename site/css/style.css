@@ -1,53 +1,62 @@
 body {
-  margin: auto;
+  margin: 0;
   padding: 0;
   font-size: 18px;
   line-height: 24px;
   font-family: "Arial", sans-serif;
   color: #404040;
   background-color: white;
-  min-width: 1200px;
+  width: 100%;
 }
 
 .container {
-  width: 1180px;
   margin: 0 auto 0 auto;
+  width: 1300px;
 }
-/* вставить нужную картинку*/
-header {
-  background: url(img/header-bg.jpg) no-repeat center;
-  background-size: cover;
-  min-height: 490px;
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  color: #824604;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #824604;
+  padding: 10px;
+  text-align: center;
+  font: inherit;
+  width: 150px;
 }
 
 .header-logo {
-  background-color: saddlebrown;
+  background: url(../img/header.jpg) no-repeat center;
   color: white;
+  background-size: cover;
   min-height: 600px;
-  float: left;
-  width: auto;
 }
 
 .header-logo img {
   padding: 35px 0 0 200px;
   position: absolute;
+  float: left;
 }
 
 .main-nav {
-  width: 800px;
-  float: left;
   list-style: none;
-  border-top: 1px solid #7b581e;
-  border-bottom: 1px solid #7b581e;
-  padding: 15px 0 15px 0;
+  
+  padding: 0px 0 15px 0;
   margin-left: 350px;
 }
+.header-logo ul {
+  padding-top: 55px;
+  border-bottom: 1px solid #AA8A4D;
+  border-top: 1px solid #AA8A4D;
+} 
 
 .main-nav li {
   text-transform: uppercase;
   font-size: 16px;
   display: inline-block;
-  margin: 50px 5px 0 50px;
+  margin: 5px 5px 5px 50px;
   padding: 3px;
 }
 
@@ -88,9 +97,10 @@ header {
 }
 
 .benefits {
-  padding: 50px 0 55px 0;
+  margin-top: 150px;
+  padding: 50px 0 50px 0;
   background-color: #feca79;
-  height: 300px;
+  height: 320px;
 }
 
 .benefits ul {
@@ -101,11 +111,10 @@ header {
 
 .benefits-item {
   text-align: center;
-  border-left: 1px solid #8d745a;
-  padding-top: 70px;
+  border-left: 1px solid #E6B56B;
   float: left;
-  width: 280px;
-  padding: 0 30px 0 50px;
+  width: 300px;
+  padding: 0 40px 0 40px;
 }
 
 .benefits-item:first-child {
@@ -113,45 +122,58 @@ header {
 }
 
 .benefits-item p {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 35px;
   text-align: left;
 }
 
 .benefits-title {
   font-family: "Arial", serif;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 20px;
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
   text-align: left;
 }
-/*подставить нужные картинки*/
+
 .benefits-choice {
-  background: url(img/feature-1.png) no-repeat top center;
+  background: url(../img/preview-1.jpg) no-repeat top left;
+  width: 100px;
+  height: 100px;
 }
-/*подставить нужные картинки*/
+
 .benefits-quality {
-  background: url(img/feature-2.png) no-repeat top center;
+  background: url(../img/preview-2.jpg) no-repeat top left;
+  width: 100px;
+  height: 100px;
 }
-/*подставить нужные картинки*/
+
 .benefits-safety {
-  background: url(img/feature-3.png) no-repeat top center;
+  background: url(../img/preview-3.jpg) no-repeat top left;
+  width: 100px;
+  height: 100px;
 }
 
 .section-title {
-  font-size: 40px;
+  font-size: 44px;
   text-transform: uppercase;
-  margin: 60px 180px 60px 0;
+  margin: 60px 100px 60px 150px;
   font-weight: bold;
   line-height: 50px;
+}
+
+.history-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-top: 50px;
 }
 
 .history dl {
   width: 520px;
   margin: 0;
   padding: 0;
-
+  margin-left: 150px;
 }
 
 .history dt {
@@ -176,11 +198,11 @@ right: -250px;
 
 .history dd p {
   margin: 0;
-}
+  font-size: 18px;
+  line-height: 35px;
+  width: 550px;
+  padding-top: 20x;
 
-.history-title {
-  font-size: 20px;
-  text-transform: uppercase;
 }
 
 .history-source {
@@ -193,17 +215,59 @@ right: -250px;
   color: #666666;
 }
 
-.assortment {
-  padding-top: 70px;
-  padding-bottom: 90px;
+.pressa {
+  background-color: #ECE4D7;
+}
+ 
+.pressa .section-title {
+  padding-top: 100px;
+
 }
 
+.pressa p {
+  font-size: 18px;
+  line-height: 35px;
+  padding-top: 30px;
+  padding-left: 100px;
+  height: 235px;
+  width: 780px;
+}
+
+.pressa cite {
+  text-transform: uppercase;
+  padding-left: 510px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  position: relative;
+  bottom: 90px;
+}
+
+.to-full-info {
+  position: relative;
+  bottom: 100px;
+  left: -770px;
+  color: #A59E94;
+  border-color: #A59E94;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.assortment {
+  padding-top: 20px;
+  padding-bottom: 90px;
+  height: 500px;
+}
+
+.assortment .section-title {
+   margin-left: 200px;
+}
 .price-list {
   width: 70%;
   border-collapse: collapse;
   line-height: 30px;
   margin: auto;
-  margin-bottom: 50px;
+ 
 }
 
 .price-list th {
@@ -211,22 +275,26 @@ right: -250px;
   text-align: left;
   font-size: 11px;
   text-transform: uppercase;
+  border-bottom: 1px solid #E4E4E4;
+  color: #989898;
 }
 
 .price-list td {
-  border-bottom: 1px solid #d1cccc;
+  font-size: 16px;
+  border-bottom: 1px solid #E4E4E4;
 }
 
 .price-list th,
 .price-list td {
-  padding: 15px 10px;
+  padding: 18px 10px;
 }
 
 .price-list .price-name {
   font-weight: bold;
-  color: #000000;
+  color: #424242;
   text-transform: uppercase;
   font-size: 16px;
+  width: 400px;
 }
 
 .price-list .price-name sup {
@@ -238,14 +306,26 @@ right: -250px;
   margin-left: 20px;
 }
 
+.price-list .price {
+  text-align: right;
+}
+
 .order {
   padding-top: 60px;
   padding-bottom: 70px;
+  padding-left: 300px;
   background-color: #feca79;
+  height: 1050px;
 }
 
 .order-tip {
   font-size: 16px;
+  width: 650px;
+}
+
+.order .section-title {
+  margin-left: 0;
+  font-size: 40px;
 }
 
 .form-group {
@@ -253,6 +333,13 @@ right: -250px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;
+  width: 600px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+  width: 600px;
 }
 
 .form-group input[type="text"],
@@ -266,7 +353,6 @@ right: -250px;
   background-color: #e5b56d;
   margin-top: 35px;
   height: 55px;
-  width: 100%;
   padding: 9px 15px;
   box-sizing: border-box;
 }
@@ -276,7 +362,7 @@ right: -250px;
 .form-group input[type="phone"]:hover,
 .form-group select:hover,
 .form-group textarea:hover {
-  border-color: #bebebe;
+  border-color: #8d745a;
 }
 
 .form-group input[type="text"]:focus,
@@ -295,6 +381,7 @@ right: -250px;
 .form-group-right-part {
   float: right;
   width: 290px;
+  padding-right: 640px;
   }
 
 .form-group textarea {
@@ -328,6 +415,12 @@ footer .social {
 
 .footer-menu ul {
   list-style: none;
+  padding-left: 200px;
+}
+
+.footer-menu li {
+  display: inline-block;
+  padding: 0 40px 0 40px;
 }
 
 .footer-menu a {
@@ -349,19 +442,7 @@ footer .social {
 .social,
 .social-btn {
   color: #feca79;
-}
-
-.btn {
-  display: inline-block;
-  vertical-align: top;
-  color: #824604;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid #824604;
-  padding: 10px;
-  text-align: center;
-  font: inherit;
-  width: 150px;
+  padding-top: 30px;
 }
 
 .btn-quick-order {
@@ -380,4 +461,16 @@ footer .social {
   width: 200px;
   background-color: #824603;
   color: #FEFAFE;
+}
+
+.developer {
+  padding-left: 800px;
+
+}
+
+.footer-attention {
+  font-size: 14px;
+  width: 200px;
+  padding-left: 240px;
+  padding-top: 10px;
 }
