@@ -4,14 +4,21 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-family: "Arial", sans-serif;
-  color: #404040;
+  color: #9C7D50;
   background-color: white;
   width: 100%;
 }
 
 .container {
   margin: 0 auto 0 auto;
-  width: 1300px;
+}
+
+.section-title {
+  font-size: 42px;
+  text-transform: uppercase;
+  margin: 100px 50px 60px 0;
+  font-weight: bold;
+  line-height: 50px;
 }
 
 .btn {
@@ -31,24 +38,24 @@ body {
   background: url(../img/header.jpg) no-repeat center;
   color: white;
   background-size: cover;
-  min-height: 600px;
+  min-height: 535px;
 }
 
 .header-logo img {
   padding: 35px 0 0 200px;
   position: absolute;
-  float: left;
+  top: 25px;
+  left: 250px;
 }
 
 .main-nav {
   list-style: none;
-  
-  padding: 0px 0 15px 0;
-  margin-left: 350px;
+  border-bottom: 1px solid #AA8A4D;
+  width: 700px;
+  margin-left: 600px;
 }
 .header-logo ul {
   padding-top: 55px;
-  border-bottom: 1px solid #AA8A4D;
   border-top: 1px solid #AA8A4D;
 } 
 
@@ -78,16 +85,83 @@ body {
   font-family: "Arial", serif;
   font-size: 70px;
   line-height: 70px;
-  margin-top: 300px;
+  margin-top: 145px;
   text-align: center;
 }
 
-/*пиво романтик*/
-.one {
+
+.feature-item {
+  display: flex;
 }
 
-/*пиво вахтер*/
+.new-goods {
+  display: flex;
+}
+
+.new-goods table {
+  float: right;
+  border-bottom: 1px solid #D7D7D7;
+  padding: 20px;
+  padding-left: 0;
+}
+
+table tr {
+  text-align: left;
+}
+
+.new-goods p {
+  font-size: 14px;
+}
+
+.new-goods img,
+.new-goods h1  {
+  margin-left: 50px;
+}
+
+
+.ingredients {
+  position: relative;
+  top: 80px;
+  left: 250px;
+  width: 130px;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+.one {
+  margin: 20px;
+  border-left: 1px solid #D7D7D7;
+  border-right: 1px solid #d7d7d7;
+}
+
 .two {
+  border-right: 1px solid #d7d7d7;
+}
+.new-goods h1,
+table {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.new-goods .btn {
+  margin-top: 40px;
+}
+
+.feature-item .description {
+ width: 300px;
+ font-size: 16px;
+ line-height: 35px;
+ margin-left: 20px;
+}
+
+.buyng {
+  display: flex;
+}
+
+.buyng p {
+  font-weight: 600;
+  margin-left: 55px;
+  margin-top: 55px;
+  margin-right: 30px;
 }
 
 .clearfix::after {
@@ -97,6 +171,7 @@ body {
 }
 
 .benefits {
+  display: flex;
   margin-top: 150px;
   padding: 50px 0 50px 0;
   background-color: #feca79;
@@ -115,6 +190,7 @@ body {
   float: left;
   width: 300px;
   padding: 0 40px 0 40px;
+  
 }
 
 .benefits-item:first-child {
@@ -122,9 +198,10 @@ body {
 }
 
 .benefits-item p {
-  font-size: 18px;
-  line-height: 35px;
+  font-size: 16px;
+  line-height: 30px;
   text-align: left;
+  padding: 0 40px 0 40px;
 }
 
 .benefits-title {
@@ -135,45 +212,45 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-align: left;
+  padding-left: 40px;
 }
 
 .benefits-choice {
   background: url(../img/preview-1.jpg) no-repeat top left;
   width: 100px;
   height: 100px;
+  background-position-x: 30px;
 }
 
 .benefits-quality {
   background: url(../img/preview-2.jpg) no-repeat top left;
   width: 100px;
   height: 100px;
+  background-position-x: 30px;
 }
 
 .benefits-safety {
   background: url(../img/preview-3.jpg) no-repeat top left;
   width: 100px;
-  height: 100px;
+  height: 100px; 
+  background-position-x: 30px;
 }
 
-.section-title {
-  font-size: 44px;
-  text-transform: uppercase;
-  margin: 60px 100px 60px 150px;
-  font-weight: bold;
-  line-height: 50px;
+.history {
+  display: flex;
+  margin-right: 370px;
+  margin-bottom: 80px;
 }
 
 .history-title {
   font-size: 22px;
   text-transform: uppercase;
-  padding-top: 50px;
 }
 
 .history dl {
   width: 520px;
   margin: 0;
   padding: 0;
-  margin-left: 150px;
 }
 
 .history dt {
@@ -202,7 +279,6 @@ right: -250px;
   line-height: 35px;
   width: 550px;
   padding-top: 20x;
-
 }
 
 .history-source {
@@ -216,21 +292,19 @@ right: -250px;
 }
 
 .pressa {
+  display: flex;
   background-color: #ECE4D7;
 }
- 
 .pressa .section-title {
-  padding-top: 100px;
-
+  margin-left: 140px;
 }
-
 .pressa p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 35px;
   padding-top: 30px;
   padding-left: 100px;
   height: 235px;
-  width: 780px;
+  width: 690px;
 }
 
 .pressa cite {
@@ -254,20 +328,19 @@ right: -250px;
 }
 
 .assortment {
+  display: flex;
   padding-top: 20px;
   padding-bottom: 90px;
   height: 500px;
 }
 
 .assortment .section-title {
-   margin-left: 200px;
+margin-right: 600px;
 }
 .price-list {
-  width: 70%;
+  width: 100%;
   border-collapse: collapse;
   line-height: 30px;
-  margin: auto;
- 
 }
 
 .price-list th {
@@ -311,16 +384,14 @@ right: -250px;
 }
 
 .order {
-  padding-top: 60px;
-  padding-bottom: 70px;
-  padding-left: 300px;
+  display: flex;
   background-color: #feca79;
   height: 1050px;
 }
 
 .order-tip {
   font-size: 16px;
-  width: 650px;
+  width: 700px;
 }
 
 .order .section-title {
@@ -332,34 +403,40 @@ right: -250px;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 15px;
   width: 600px;
+  color: #9D7E50;
 }
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group select,
-.form-group textarea {
-  width: 600px;
+
+.form-group select {
+  text-transform: uppercase;
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
-.form-group input[type="phone"],
 .form-group select,
 .form-group textarea {
-  font: inherit;
+  width: 600px;
+  margin-left: 200px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.clearfix input[type="phone"],
+.form-group select,
+.form-group textarea {
+  font-size: 16px;
   color: inherit;
   border: 1px solid #e5b56d;
   background-color: #e5b56d;
-  margin-top: 35px;
   height: 55px;
   padding: 9px 15px;
   box-sizing: border-box;
+  width: 600px;
 }
 
 .form-group input[type="text"]:hover,
 .form-group input[type="email"]:hover,
-.form-group input[type="phone"]:hover,
+.clearfix input[type="phone"]:hover,
 .form-group select:hover,
 .form-group textarea:hover {
   border-color: #8d745a;
@@ -367,26 +444,33 @@ right: -250px;
 
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
-.form-group input[type="phone"]:focus,
+.clearfix input[type="phone"]:focus,
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: #8d745a;
 }
 
-.form-group-left-part {
-  float: left;
-  width: 290px;
-  }
+.clearfix {
+  display: flex;
+  justify-content: space-around;
+  color: #9D7E50;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 
-.form-group-right-part {
-  float: right;
-  width: 290px;
-  padding-right: 640px;
-  }
+::placeholder {
+  color: #9C7D50;
+}
+.clearfix input[type="phone"] {
+  width: 200px;
+  margin-left: 75px;
+  margin-top: 25px;
+  color: #9D7E50;
+}
 
 .form-group textarea {
   display: block;
-  min-height: 120px;
+  min-height: 150px;
 }
 
 .checkbox-area {
@@ -400,7 +484,7 @@ right: -250px;
 }
 
 footer {
-  margin-top: 0px;
+  display: flex;
   padding: 10px;
   background-color: #000000;
   color: #c3c3c3;
@@ -409,18 +493,18 @@ footer {
 }
 
 footer .social {
-  float: left;
-  width: 490px;
+  width: 600px;
+  margin-left: 250px;
 }
 
 .footer-menu ul {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
-  padding-left: 200px;
 }
 
 .footer-menu li {
-  display: inline-block;
-  padding: 0 40px 0 40px;
+  width: 150px;
 }
 
 .footer-menu a {
@@ -433,6 +517,7 @@ footer .social {
 
 .footer-menu a:hover {
   color: #ffffff;
+  border-bottom: 1px solid white;
 }
 
 .footer-menu a:active {
@@ -464,7 +549,7 @@ footer .social {
 }
 
 .developer {
-  padding-left: 800px;
+  padding-left: 200px;
 
 }
 
